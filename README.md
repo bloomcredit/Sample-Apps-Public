@@ -12,7 +12,7 @@ To aid developers in their integration journey, this repository offers a range o
 
 1. [**Manual Report Viewer**](./manual-report-viewer/): A straightforward web application that initiates an inquiry, presenting the results in a user-friendly format.
 2. **Internet Loan Application**: _Anticipated soon_
-3. **Account Review Report**: _Anticipated soon_
+3. [**Account Review Report**](./account-review): A tool designed to analyze key credit metrics across a set of existing customers.
 
 ### Furnishment Sample Applications:
 

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <title>Bloomcredit API Sample Registeration</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/register.css') }}"
+    />
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='script/showLoading.js') }}"
+    ></script>
+  </head>
+  <body class="container bg-light">
+    <!-- Start Header form -->
+    <div class="text-center pt-3">
+      <h1>Your Fintech</h1>
+      <h2>Welcome! Let's create a consumer first.</h2>
+      <p>Fill out the form to get access to your credit report.</p>
+    </div>
+    <!-- End Header form -->
+    <!-- Start Card -->
+    <div class="card">
+      <!-- Start Card Body -->
+      <div class="card-body">
+        <!-- Start Form -->
+        <form
+          id="bookingForm"
+          method="post"
+          action="/result"
+          class="needs-validation"
+          novalidate
+          autocomplete="off"
+        >
+          <div class="form-row">
+            <!-- Start Input First Name -->
+            <div class="form-group col-md-6">
+              <label for="inputName">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                name="Fname"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+            <!-- End Input First Name -->
+            <!-- Start Input Last Name -->
+            <div class="form-group col-md-6">
+              <label for="inputName">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                name="Lname"
+                placeholder="Enter last name"
+                required
+              />
+            </div>
+            <!-- End Input Ladt Name -->
+          </div>
+          <div class="form-row">
+            <!-- Start Input Email -->
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                name="email"
+                placeholder="Enter email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+              <small class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <!-- End Input Email -->
+            <!-- Start Input Telephone -->
+            <div class="form-group col-md-6">
+              <label for="inputPhone">Phone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="inputPhone"
+                name="phone"
+                placeholder="xxx-xxx-xxxx"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+              <small class="form-text text-muted"
+                >We'll never share your phone number with anyone else.</small
+              >
+            </div>
+            <!-- End Input Telephone -->
+          </div>
+          <div class="form-row">
+            <!-- Start Input Address -->
+            <div class="form-group col-md-6">
+              <label for="inputAddress">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                name="address"
+                placeholder="1234 Main St"
+                required
+              />
+            </div>
+            <!-- End Input Address -->
+            <!-- Start Input Address2 -->
+            <div class="form-group col-md-6">
+              <label for="inputAddres2">Address 2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                name="address2"
+                placeholder="Apartment, studio, or floor"
+                required
+              />
+            </div>
+            <!-- End Input Address2 -->
+          </div>
+          <div class="form-row">
+            <!-- Start Input city -->
+            <div class="form-group col-md-4">
+              <label for="city">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                name="city"
+                placeholder="Enter city"
+                required
+              />
+            </div>
+            <!-- End Input city -->
+            <!-- Start Input state -->
+            <div class="form-group col-md-4">
+              <label for="city">State</label>
+              <select class="form-control" id="state" name="state">
+                <option value="">Enter state</option>
+                <option value="AK">Alaska</option>
+                <option value="AL">Alabama</option>
+                <option value="AR">Arkansas</option>
+                <option value="AZ">Arizona</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DC">District of Columbia</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="IA">Iowa</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MD">Maryland</option>
+                <option value="ME">Maine</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MO">Missouri</option>
+                <option value="MS">Mississippi</option>
+                <option value="MT">Montana</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="NE">Nebraska</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NV">Nevada</option>
+                <option value="NY">New York</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VA">Virginia</option>
+                <option value="VT">Vermont</option>
+                <option value="WA">Washington</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WV">West Virginia</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+            <!-- End Input state -->
+            <!-- Start Input zipcode -->
+            <div class="form-group col-md-4">
+              <label for="zipcode">ZIP</label>
+              <input
+                type="text"
+                class="form-control"
+                id="zipcode"
+                name="zipcode"
+                pattern="[0-9]{5}"
+                placeholder="Enter zip code"
+                maxlength="5"
+                required
+              />
+            </div>
+            <!-- End Input zipcode -->
+          </div>
+          <!-- Start Birthdate, Gender -->
+          <div class="form-row">
+            <!-- Start Input Date -->
+            <div class="form-group col-md-6">
+              <label for="inputDate">Birthdate</label>
+              <input
+                type="date"
+                class="form-control"
+                id="inputDate"
+                name="birthdate"
+                required
+              />
+            </div>
+            <!-- End Input Date -->
+            <div class="form-group col-md-6">
+              <label>Gender</label>
+              <select
+                name="gender"
+                id="gender"
+                class="form-control"
+                aria-label="selecting gender"
+                required
+              >
+                <option selected disabled></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <!-- End Birthdate, Gender -->
+          <div class="form-row pb-md-2">
+            <div class="form-group col-md-12">
+              <label class="control-label" for="SSN"
+                >Social Security Number:</label
+              >
+              <div class="input-group">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="SSN"
+                  name="ssn"
+                  placeholder="###-##-####"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}"
+                  maxlength="12"
+                  required
+                />
+                <button
+                  class="password-toggle"
+                  type="button"
+                  aria-label="Toggle password visibility"
+                  onclick="toggleVisible()"
+                >
+                  <svg
+                    class="open-eye"
+                    id="open-eye"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="closed-eye"
+                    id="closed-eye"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,175a8,8,0,0,1-10.92-3l-19-33.2A123.23,123.23,0,0,1,162,155.46l5.87,35.22a8,8,0,0,1-6.58,9.21A8.4,8.4,0,0,1,160,200a8,8,0,0,1-7.88-6.69l-5.77-34.58a133.06,133.06,0,0,1-36.68,0l-5.77,34.58A8,8,0,0,1,96,200a8.4,8.4,0,0,1-1.32-.11,8,8,0,0,1-6.58-9.21L94,155.46a123.23,123.23,0,0,1-36.06-16.69L39,172A8,8,0,1,1,25.06,164l20-35a153.47,153.47,0,0,1-19.3-20A8,8,0,1,1,38.22,99c16.6,20.54,45.64,45,89.78,45s73.18-24.49,89.78-45A8,8,0,1,1,230.22,109a153.47,153.47,0,0,1-19.3,20l20,35A8,8,0,0,1,228,175Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <small class="form-text text-muted"
+                >We won't share your Social Security Number.</small
+              >
+            </div>
+          </div>
+          <!-- Start Submit Button -->
+          <div
+            class="col text-center"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <button
+              class="btn btn-primary col-lg-2 bold font-weight-bold"
+              id="submit-button"
+              type="submit"
+            >
+              Submit
+            </button>
+            <button
+              class="btn btn-primary col-lg-2 bold font-weight-bold"
+              id="loading-button"
+              style="display: none"
+              type="button"
+              disabled
+            >
+              <span
+                class="spinner-border spinner-border-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              Loading...
+            </button>
+          </div>
+          <!-- End Submit Button -->
+        </form>
+        <!-- End Form -->
+      </div>
+      <!-- End Card Body -->
+    </div>
+    <!-- End Card -->
+    <footer>
+      <div class="my-4 text-muted text-center">
+        <p>© Your Fintech 2023. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- JavaScript functions -->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='script/register.js') }}"
+    ></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

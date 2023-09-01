@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "Sample-Apps-Public"
+version = "0.1.0"
+description = "Sample Apps Public"
+authors = ["Bloom Engineering <tech@bloomcredit.io>"]
+maintainers = ["Bloom Engineering <tech@bloomcredit.io>"]
+readme = "README.md"
+repository = "https://github.com/bloomcredit/Sample-Apps-Public"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^2.2.3"
+python-dotenv = "^1.0.0"
+requests = "^2.28.2"
+pydantic-jsonapi = "^0.11.0"
+datetime = "^5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

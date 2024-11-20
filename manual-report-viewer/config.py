@@ -25,7 +25,7 @@ SKU = "equifax-silver-soft-vantage-internet"
 # equifax-gold-soft-vantage-internet
 
 # static urls
-BLOOM_AUTH_URL = "https://bloomcredit-dev.auth0.com/oauth/token"
+BLOOM_AUTH_URL = "https://authn.bloom.dev/oauth2/token"
 ORDER_DATA_URL = "https://sandbox.bloom.dev/v2/data-access/orders/"
 CREATE_CONSUMER_URL = "https://sandbox.bloom.dev/v2/core/consumers"
 QUERY_DATA_GQL_URL = "https://sandbox.bloom.dev/v2/data-access/graphql"

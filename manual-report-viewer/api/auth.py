@@ -10,11 +10,12 @@ def authRequest(app):
         'content-type': 'application/json',
     }
 
-    # Make auth request object to /oauth/token
+    # Make auth request object to /oauth2/token
     json_data = AuthRequest(
         client_id=app.config["CLIENT_ID"],
         client_secret=app.config["CLIENT_SECRET"],
         audience='dev-api',
+        scope='data-access:all',
         grant_type='client_credentials').dict()
 
     # Make actual request

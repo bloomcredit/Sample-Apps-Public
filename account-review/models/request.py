@@ -36,6 +36,7 @@ class AuthRequest(BaseModel):
     client_id: str
     client_secret: str
     audience: str
+    scope: str
     grant_type: str
 
 
